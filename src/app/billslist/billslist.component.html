@@ -1,0 +1,76 @@
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8" id="htmlData">
+    
+    
+    
+            <form [formGroup]="addbillform" (ngSubmit)="submit()">
+              <label for="phno"><b>Phone number</b></label><br>
+              <input class="text text-dark" type="text" name="phno"  formControlName="mobile_no" required=""><br><br>
+              <input type="submit" class="bg-danger text-white fs-2 w-25 py-3"value="GENERATE BILL"><br><br> 
+              </form>   
+              
+              
+            <div [hidden]="!submitted" >
+                <html>
+                    <meta charset="utf-8">
+                    <title>Invoice</title>
+                    
+                    <link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+                    <script src="script.js"></script>
+                
+                    <header>
+                        <h1>Invoice</h1>
+                        
+                        
+                    </header>
+                    <article>
+                        <h1>Recipient</h1>
+                        <address contenteditable>
+                            <p>Voizfonica</p>
+                        </address>
+                        <table class="meta">
+                            <tr>
+                                <th><span contenteditable>Invoice #</span></th>
+                                <td><span contenteditable>101138</span></td>
+                            </tr>
+                            <tr>
+                                <th><span contenteditable>Date</span></th>
+                                <td><span contenteditable>June 17, 2022</span></td>
+                            </tr>
+                            
+                        </table>
+                        <table class="inventory">
+                            <thead>
+                                <tr>
+                                    <th><span contenteditable>Mobile Number</span></th>
+                                    <th><span contenteditable>Amount</span></th>
+                                    
+                                    
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <td><a class="cut">-</a><span contenteditable>{{newval1}}</span></td>
+                                    <td><span contenteditable>{{newval}}</span></td>
+                                    
+                                    
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                       
+                    </article>
+                    <aside>
+                        <h1><span contenteditable>Additional Notes</span></h1>
+                        <div contenteditable>
+                            <p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+                        </div>
+                    </aside>
+               
+                
+                    </html>

@@ -1,0 +1,50 @@
+<head>
+    <style>
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 90%;
+    }
+    
+    #customers td, #customers th {
+      border: 3px solid #2e4a64;;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #b4c7da;;}
+    
+    #customers tr:hover {background-color: #b4c7da;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #76dddd;
+      color: rgb(0, 0, 0);
+    }
+    </style>
+    </head>
+    <body>
+        <style>
+            h2 {text-align: center;}
+           
+            </style>
+    <h2>Customer complaint details</h2>
+    
+    <table class ="center" id="customers">
+       
+        <tr>
+            <th>Mobile Number</th>
+            <th>Complaint Description</th>
+            <th>Complaint Number</th>
+            <th>Status of compaint </th>
+          </tr>
+          <tr *ngFor="let dataLayout of localVar ">
+            <td>{{dataLayout.mobileNumber}}</td>
+            <td>{{dataLayout.complaintDescription}}</td>
+            <td>{{dataLayout.complaintNumber}}</td>
+            <td>{{dataLayout.status}}</td>
+          </tr>
+    </table>
+    
+    </body>

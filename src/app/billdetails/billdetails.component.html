@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div class="content">
+
+  <div class="container" >
+    <div class="row justify-content-center">
+      
+      <div class="col-md-5">
+        <h2 style="text-align:center"><strong>Payment</strong></h2>
+        <br>
+<form [formGroup]="addform" (ngSubmit)="submit()">
+  
+    
+
+    
+    <label for="mobileNo">Mobile Number</label>
+    <input formControlName="mobileNo" id="mobileNo" type="tel" class="form-control">    <br>
+    <br>
+
+
+    <label for="amt">Amount</label>
+    <input formControlName="amt" id="amt" type="text" class="form-control">    <br>
+    <br>
+    <button class="btn btn-primary" routerLink="['/recharge']" type="submit" >Submit</button>
+    <h1 class="text-danger">{{message}}</h1>
+    <a href="billslist">View Bill</a>
+    
+</form>
+
+</div>
+</div>
+</div>
+</div>

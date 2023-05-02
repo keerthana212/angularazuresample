@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(210, 238, 238);
+  }
+  .read{
+    border: 8px solid rgb(210, 238, 238);
+    background-color: rgb(210, 238, 238);
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    margin-left:100px ;
+  }
+  .center {
+    margin: 30px 70px;
+    width: 50%;
+   
+    padding: 10px;
+    
+  }

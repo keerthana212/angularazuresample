@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<body class="bgcolor">
+<div class="content">
+
+    <div class="container" >
+      <div class="row justify-content-center">
+        
+        <div class="col-md-5">
+    
+        
+            
+          
+  <h2 style="text-align:center"><p style="font-size:50px;"><strong>Reach Out to Us</strong></p></h2>
+  <br>
+<form [formGroup]="complaintform" (ngSubmit)="submitform()">
+    <label for="mobileNumber"><p style="font-size:20px;"><b>Mobile Number</b></p></label>
+    <input formControlName="mobileNumber" id="mobileNumber" type="text" class="form-control"><br>
+    <br>
+
+    <label for="complaintDescription"><p style="font-size:20px;"><b>Complaint Description</b></p></label>
+    <input formControlName="complaintDescription" id="complaintDescription" type="text" class="form-control"><br>
+    <br>
+    
+    <button class="btn btn-primary" type="submit"><b>Submit</b></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="tracklist">Admin Track </a>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+
+
